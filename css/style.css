@@ -39,7 +39,7 @@ body{
  
 /* navbar CSS */
 .logo{
-    height: 100px;
+    height: 6rem;
 }
 
 .nav-item a {
@@ -275,6 +275,17 @@ footer p{
         width: 80%;
     
     }
+    #places .row{
+        padding-bottom: 2rem;
+    }
+    .container-fluid{
+        padding: 30px;
+    }
+
+    .content-left{
+        margin-left: 0;
+    }
+
     .aboutUs p{
         text-align:center;
         width: 100%;
