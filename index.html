@@ -7,26 +7,486 @@
     
     <!-- bootstraps Links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+ 
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+ 
     <!-- font awesome kit account No.. -->
     <script src="https://kit.fontawesome.com/8e1e89ca82.js" crossorigin="anonymous"></script>
     
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Mountains travel</title>
+    <title>Mountains travelers</title>
 </head>
 <body>
+  <!--/////////////////////// Messenger Chat Plugin Code ////////////////////////////-->
+  <div id="fb-root"></div>
 
-    <div class="">
-        <h1>this is body of the code</h1>
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "110183935311881");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v15.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+<!-- /////////////////////////navbar /////////////////////////////// -->
+  <section id="title" class="colored-section">
+    <div class="container-fluid">
+    
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href=""><img class="logo" src="images/logo/LOGO.png" alt="mountain travelers"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#places">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#package">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#places">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    
+      <!-- Title -->
+      <div class="row">
+        <div class="title-page col-lg-6 ">
+          <h1 class="big-Heading">Everything we need to travel is right here!</h1>
+          <button type="button" class="btn btn-lg btn-dark download-btn"><i class="fab fa-apple download"></i>Download</button>
+          <button type="button" class="btn btn-lg btn-outline-light download-btn"><i class="fab fa-google-play download"></i>Download</button>
+        </div>
+        <div class="positioning col-lg-6">
+          <img src="images/logo/MOUNTAIN.png" class="title-image" alt="iphone-mockup">
+          <img src="images/logo/TRAVELERS.png" class="travelers" alt="iphone-mockup">
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <section id="places" >
+    <div class="container-fluid">
+      <h1 class="places-title">Places</h1>
+
+
+      <!-- right image -->
+      <div class="row">
+        <div class="places-images col-lg-6"  >
+          <img src="images/places/LakeBraies.jpg" class="picRight" alt="">
+        </div>
+
+        
+        <div class="col-lg-6">
+          <h2 class="content-title">Lake Braies</h2>
+          <h4 class="content-right">
+            Lake Braies is an attraction for recreation
+            seekers, nature lovers and hikers, in both
+            summer and winter. The lake, with an
+            average depth of 17 m, measures 36 m at
+            its lowest point. Even though Braies lake is
+            listed amongst the bathing lakes of South
+            Tyrol, only a few hardy people dare to jump
+            into the cool waters.</h4>
+        </div>
+      </div>
+
+      <!-- left image -->
+      <div class="row">
+        <div class="places-images-left col-lg-6"  >
+          <img src="images/places/Grand-Canal-Venice.jpg" class="picLeft" alt="">
+        </div>
+
+        
+        <div class="col-lg-6 content-box">
+          <h2 class="content-title-left">Grand Canal</h2>
+          <h4 class="content-left">
+            Main waterway of Venice, Italy, following a
+            natural channel that a reverse-S course
+            from San Marco Basilica to Santa Chiara
+            Church and divides the city into two parts.
+            These waterways carry the bulk of
+            Venetian transportation, as automobiles
+            are banned throughout much of the city.
+            Traditional poled gondolas are a favourite
+            with tourists but are now vastly
+            outnumbered by motorized public-transit
+            water buses (vaporetti) and private water
+            taxis.</h4>
+        </div>
+      </div>
+
+      <!-- right image -->
+      <div class="row">
+        <div class="places-images col-lg-6"  >
+          <img src="images/places/boracay2.png" class="picRight" alt="">
+        </div>
+
+        
+        <div class="col-lg-6">
+          <h2 class="content-title">Boracay Island</h2>
+          <h4 class="content-right">
+            Boracay is a small island in the central Philippines. 
+            It's known for its resorts and beaches. Along the west coast, 
+            White Beach is backed by palm trees, bars and restaurants. 
+            On the east coast, strong winds make Bulabog Beach a hub for water sports. 
+            Nearby, the observation deck on Mount Luho offers panoramic views over the island. 
+            Offshore, coral reefs and shipwrecks are home to diverse marine life. </h4>
+        </div>
+      </div>
+
+       <!-- left image -->
+       <div class="row">
+        <div class="places-images-left col-lg-6"  >
+          <img src="images/places/BatanesPic.jpg" class="picLeft" alt="">
+        </div>
+
+        
+        <div class="col-lg-6 content-box">
+          <h2 class="content-title-left">Batanes</h2>
+          <h4 class="content-left">
+            It is known for its scenic waters and terrain and clean environment. 
+            Batanes is also recognized for the unique culture of the islands' first settlers, 
+            the Ivatans. Batanes is open for swimming, snorkeling, diving, 
+            lighthouse visits, biking, and visits to century-old Ivatan houses.</h4>
+        </div>
+      </div>
+
+      <!-- right image -->
+      <div class="row">
+        <div class="places-images col-lg-6"  >
+          <img src="images/places/CoronPic.jpg" class="picRight" alt="">
+        </div>
+
+        
+        <div class="col-lg-6">
+          <h2 class="content-title">Coron Island</h2>
+          <h4 class="content-right">
+            One of the top diving destinations in the world, 
+            Coron Island is a tropical paradise, with electric blue and green water that almost seems unreal. 
+            The mountainous island sits on the tip of the Palawan island region, 
+            the western-most section of islands in the Philippines.
+            The island is popular for diving because of the numerous wrecks here. 
+            Many of the preserved shipwrecks are located in depths ranging from 
+            shallow water at just three meters to deep water at 42 meters.</h4>
+        </div>
+      </div>
+
+
+         <!-- left image -->
+         <div class="row">
+          <div class="places-images-left col-lg-6"  >
+            <img src="images/places/BaguioPic.jpg" class="picLeft" alt="">
+          </div>
+  
+          
+          <div class="col-lg-6 content-box">
+            <h2 class="content-title-left">Baguio</h2>
+            <h4 class="content-left">
+              Baguio is a city tucked away in a mountainous region on Luzon Island. 
+              Though it is a city, Baguio is intimate and reminiscent of a cottage-type environment. 
+              Baguio is called the City of Pines for the rich pine forests and cooler temperatures that surround it.</h4>
+          </div>
+        </div>
+  
+        <!-- right image -->
+        <div class="row">
+          <div class="places-images col-lg-6"  >
+            <img src="images/places/PalawanPic.jpg" class="picRight" alt="">
+          </div>
+  
+          
+          <div class="col-lg-6">
+            <h2 class="content-title">Puerto Princesa</h2>
+            <h4 class="content-right">
+              The rock islands, caves, and natural parks of Palawan Island are the 
+              hidden paradise of the Philippines. The coastal city of 
+              Puerto Princesa is where you should base yourself in order to 
+              explore some of these natural gems of the country.</h4>
+          </div>
+        </div>
+
+
+         <!-- left image -->
+         <div class="row">
+          <div class="places-images-left col-lg-6"  >
+            <img src="images/places/ApoPic.jpg" class="picLeft" alt="">
+          </div>
+  
+          
+          <div class="col-lg-6 content-box">
+            <h2 class="content-title-left">Apo Island</h2>
+            <h4 class="content-left">
+              If a swim with sea turtles sounds like the experience of a 
+              lifetime then you will want to head to Apo Island in the Philippines. 
+              The reason this location lends itself to swimming with turtles and other sea life is 
+              because of the protected marine sanctuary. The Apo Island Marine Reserve is where you can take guided 
+              trips to see the sea turtles up close and snorkel at the coral reefs.</h4>
+          </div>
+        </div>
+  
+        <!-- right image -->
+        <div class="row">
+          <div class="places-images col-lg-6"  >
+            <img src="images/places/ElNidoPic.jpg" class="picRightlast" alt="">
+          </div>
+  
+          
+          <div class="col-lg-6">
+            <h2 class="content-title">El Nido</h2>
+            <h4 class="content-right">
+              El Nido is a stunning place to visit in the Philippines for 
+              its clear water lagoons, marine life, coral reefs, and limestone cliffs. 
+              You can even take part in cliff climbing excursions, or go to 
+              Taraw Peak to experience a canopy walk with the best views of the landscape.</h4>
+          </div>
+        </div>
+
+    </div>
+  </section>   
+  
+  
+
+  <!-- //////////////////////////// Package Part ///////////////////////////////////////////-->
+  <section id="package" class="packagePart">
+
+    <!-- content revision -->
+
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+
+      <!-- card of packages -->
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-title">DELUXE</h3>
+          </div>
+
+          <div class="card-body">
+            <h2 class="price-text">2 pax / ₱25,000</h2>
+            <h4 class="price-text">Includes:</h4>
+            <br>
+            <br>
+            <p>Tour guide services,</p>
+            <p>Hotel Stay for 3 days 2 nights,</p>
+            <p>Travel taxes, Entry Fees,</p>
+            <p>Food Packages,</p>
+            <br>
+            <br>
+            <button class="btn btn-lg btn-block btn-outline-dark col-12" type="button  ">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card of packages -->
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-title">ALL-INCLUSIVE</h3>
+          </div>
+
+          <div class="card-body">
+            <h2 class="price-text">4 pax / ₱80,000</h2>
+            <h4 class="price-text">Includes:</h4>
+            <br>
+            <p>Tour guide services,</p>
+            <p>Hotel Stay for 3 days 2 nights,</p>
+            <p>Travel taxes, Entry Fees,</p>
+            <p>Food Packages,</p>
+            <p>Round-trip Airline Tickets</p>
+            <br>
+            <button class="btn btn-lg btn-dark col-12" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card of packages -->
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="pricing-title">EL-GRANDE</h3>
+          </div>
+
+          <div class="card-body">
+            <h2 class="price-text">10 pax / ₱150,000</h2>
+            <h4 class="price-text">Includes:</h4>
+
+    
+              <p>Tour guide services,</p>
+              <p>Hotel Stay for 4 days 3 nights,</p>
+              <p>Travel taxes, Entry Fees,</p>
+              <p>Food Packages,</p>
+              <p>Free Candies</p>
+              <p>Round-trip Airline Tickets</p>
+            
+     
+            <button class="btn btn-lg btn-block btn-dark col-12" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
     </div>
 
 
 
 
+    <!-- /////////////////// LOGOS /////////////////// -->
+
+    <section id="press" class="white">
+      <img class="press-logo" src="images/brands/2GO.png"  >
+      <img class="press-logo" src="images/brands/cebu.png" >
+      <img class="press-logo" src="images/brands/sogo.jpg" >
+      <img class="press-logo" src="images/brands/trust.png">
+
+    </section>
+  </section>
+
+  
     
-    <!-- bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<!-- /////////////////////////////////// testimonial Part //////////////////////////////////////////////// -->
+  <section id="testimonials" class="testimonialPart"  >
+    <div id="testimonials-carousel" class="carousel slide" data-ride="false">
+
+      <!-- carousel div -->
+      <div class="carousel-inner">
+
+        <!-- carousel datas -->
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">"The Places is so good and accommodating for me and my Family.<br> Must Try guys"</h2>
+          <img class="testimonial-image" src="images/profiles/profile1.jpg" alt="dog-profile">
+          <em class="testimonial-textem">Megumi, GMA</em>
+        </div>
+
+        <!-- carousel datas -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Awesome and excellent service. Thank you for accommodating me and my boyfriend.<br> We'll try it again next time with our family."
+          </h2>
+          <img class="testimonial-image" src="images/profiles/profile2.jpg" alt="lady-profile">
+          <em class="testimonial-textem">Castillo, Kawit</em>
+        </div>
+
+        <!-- carousel datas -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"So Cute"</h2>
+          <img class="testimonial-image" src="images/profiles/profile3.jpg" alt="lady-profile">
+          <em class="testimonial-textem">Sager, Tanza</em>
+        </div>
+
+        <!-- carousel datas -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Thanks for your service. Because of you guys, my girlfriend and our family had a fun and <br> wonderful vacation. Till next time!"</h2>
+          <img class="testimonial-image" src="images/profiles/profile4.jpg" alt="lady-profile">
+          <em class="testimonial-textem">Ilustrisimo, Kawit</em>
+        </div>
+
+        <!-- carousel datas -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"The Candies are great and full of cute places to go to."</h2>
+          <img class="testimonial-image" src="images/profiles/profile5.jpg" alt="lady-profile">
+          <em class="testimonial-textem">Lao, Imus</em>
+        </div>
+
+        <!-- carousel datas -->
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"My Family enjoys it especially my son becuase it's his Birthday celebration."</h2>
+          <img class="testimonial-image" src="images/profiles/profile6.jpg" alt="lady-profile">
+          <em class="testimonial-textem">Morales, Trece</em>
+        </div>
+
+        <!--////////////////////if you want to add more caurosel //////////////////////////////////////  -->
+
+      </div>
+
+      <!-- buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ////////////////////////// footer section ///////////////////////////////////// -->
+  <footer id="footer" class="footerSec">
+      <div class="container-fluid container-footer">
+        <div class="row">
+        
+          <!-- about us -->
+          <div class="col-lg-6 aboutUs">
+            <h2>About Us</h2>
+            <p>As a well-known Travel agency in the
+              country, Mountain Travels Agency was first
+              formed in 2022 and later developed into a
+              travel agency that can help with vacation
+              packages for travelers to various places
+              with high-class facilities.</p>
+
+            <h2>location</h2>
+            <p>Mountain Travelers Agency, Emilio
+              Aguinaldo Hwy,<br> Dasmarinas, Cavite.</p>
+
+            <h2>Contacts</h2>
+            <div class="contacts-icon">
+              <a href="https://www.facebook.com/eman.ocampo10"><i class="fa-brands fa-facebook-f icons"></i>Mountain Travelers</a> <br>
+              <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram icons"></i>MountainTravelers.com.ph</a><br>
+              <a href="mailto:ocampoemanuel192165@gmail.com"><i class="fa-solid fa-envelope icons"></i>Mountain_TravelersPH</a>
+    
+            </div>
+          </div>
+        
+          <!-- input email -->
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <h2>For more inquiries, please send us your email</h2>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </footer>
 </body>
 </html>

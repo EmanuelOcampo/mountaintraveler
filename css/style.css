@@ -1,5 +1,322 @@
+:root {
+    /* cream */
+    --cream-50: #E2D0C6;
+    --cream-100: #F2BB9D;
+    --cream-200: #FC9F6D;
+    --cream-300: #FC813F;
+    --cream-400: #F05400;
+
+    /* vlue */
+    --darkblue-50:#808F9C;
+    --darkblue-100:#6088A8;
+    --darkblue-200:#427AA8;
+    --darkblue-300:#1B639E;
+    --darkblue-400:#08528F;
+
+    --bluetviolet-50:#E6E8F2;
+    --blueviolet-100:#AEB8F5;
+    --blueviolet-200:#8194F5;
+    --blueviolet-300:#506BFA;
+    --blueviolet-400:#0A20A3;
+
+    --red-50:#D9BABA;
+    --red-100:#F0AFAF;
+    --red-200:#E67070;
+    --red-300:#F03838;
+    --red-400:#DB0000;
+}
+
+
 body{
-    padding-top: 20rem ;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: rgb(168, 119, 119);
+    background-color: var(--bluetviolet-50);
+}
+
+.container-fluid{
+    padding: 0rem 6rem;
+}
+ 
+/* navbar CSS */
+.logo{
+    height: 100px;
+}
+
+.nav-item a {
+    color: var(--darkblue-400);
+    font-size:20px;
+}
+
+.nav-link{
+    display:inline-block;
+}
+
+
+/* title CSS */
+#title{
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-page{
+    padding: 50px;
+    line-height: 10;
+    text-align: left;
+    color: var(--darkblue-400);
+
+}
+
+
+.download-btn{
+    margin-right: 10px;
+    
+    color: var(--bluetviolet-50);
+}
+
+.download-btn .download{
+    margin-right: 10px;
+}
+
+/* image title */
+.positioning{
+    position: relative;
+    top: -15px;
+}
+
+.title-image{
+    height: 120px;
+    align-items: left;
+    padding-bottom: 30px;
+}
+
+.travelers{
+    height: 30px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#places{
+    background-color:var(--darkblue-300);
+    color: var(--cream-50);
+
+}
+
+.places-title{
+    padding: 3rem 0 3rem 0;
+}
+
+
+#places .row{
+    padding-bottom: 7rem;
+}
+
+/* right image */
+.places-images{
+    width: 45rem;
+    position: absolute;
+    padding: 0 5rem 10rem 0;
+    height: 100%;
+    right: 0;
+    
+}
+
+
+.places-images-left{
+    padding-top: 70px;
+}
+
+
+.picRightlast{
+    width: 70%;
+    border-radius: 10px;
+    text-align: right;
+    margin: auto;
+}
+
+.picRight{
+    width: 80%;
+    border-radius: 10px;
+    text-align: right;
+    margin: auto;
+}
+
+.picLeft{
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.content-title{
+    text-align: left;
+    line-height: 2;
+}
+.content-right{
+    text-align: justify;
+    position: block;
+    width: 100%;
+    padding-right: 1.9rem;
+}
+
+/* left image */
+.content-box{
+    position: absolute;
+    right: 0;
+}
+.content-title-left{
+    margin-top: 3rem;
+    line-height: 2;
+    text-align: right;
+    margin-right: 5rem;
+    
+}
+
+.content-left{
+    text-align: justify;
+    position: block;
+    width: 85%;
+    margin-left: 2rem;
+}
+
+
+/* testimonial */
+
+.testimonialPart{
+    background-color:var(--darkblue-400);
+    color: var(--cream-50);
+}
+
+.carousel-item{
+    padding: 3rem 4rem;
+}
+
+.testimonial-image{
+    border-radius: 50%;
+    width: 5rem;
+    text-align: center;
+    display: inline;
+    margin:1rem
+}
+
+
+em{
+    padding: 1rem;
+    display: block;
+}
+
+
+/* package */
+
+.packagePart{
+    padding: 3rem 4rem;
+}
+
+.pricing-column{
+    padding: 1rem 2rem 0 0 ;
+}
+
+.card{
+    background-color: #f0e3dc;
+}
+
+
+/* press */
+.press-logo{
+    margin: 0 5rem 2rem 0;
+    height: 5rem;
+   
+}
+
+#press{
+    padding-top: 3rem;
+}
+
+
+
+/* footer section */
+.footerSec{
+    padding: 3rem 4rem 0 4rem;
+    text-align: left;
+    background-color:var(--darkblue-200);
+    color: var(--red-100);
+    padding-bottom: 2rem;
+}
+
+.aboutUs p{
+    text-align: justify;
+    width: 80%;
+}
+
+.contacts-icon a{
+    text-decoration: none;
+    color: var(--cream-50);
+    font-size: 1rem;
+}
+
+.icons{
+    padding-right: 1rem;
+}
+
+footer p{
+    color: var(--cream-50);
+
+}
+
+
+@media (max-width:1028px) {
+
+    .title-image,.travelers{
+        display: none;
+      }
+
+    .places-images{
+        position:relative;
+        margin: auto;
+        padding: 0 0 30px 0;
+        width: 80%;
+    
+    }
+    .aboutUs p{
+        text-align:center;
+        width: 100%;
+    }
+
+
+    .aboutUs{
+        padding: 0 0 30px 0;  
+    }
+
+    .content-right{
+        width: 100%;
+    }
+
+    .places-images-left{
+        margin: auto;
+        padding: 0 0 30px 0;
+        width: 80%;
+    
+    }
+    .content-box{
+        position: relative;
+    }
+
+    .content-title-left{
+        text-align: left; 
+    }
+
+    .content-left{
+        padding-left: 0;
+        width: 95%;
+    }
+
+    .container-footer{
+        text-align: center;
+    }
+
+    
+}
+@media (max-width:1290px){
+
+    .package .row{
+        padding-bottom: 5rem;
+    }
 }
