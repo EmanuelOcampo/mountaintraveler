@@ -275,6 +275,15 @@ footer p{
         width: 80%;
     
     }
+
+    .title-page{
+        text-align: center;
+        padding: 0;
+        line-height: 5;
+    }
+
+
+
     #places .row{
         padding-bottom: 2rem;
     }
